@@ -1,6 +1,7 @@
 import React from "react";
+// defined the search component which take in onsearch as a prop
+function Search({onSearch}) {
 
-function Search() {
   return (
     <div className="searchbar">
       <label htmlFor="search">Search Plants:</label>
@@ -8,10 +9,14 @@ function Search() {
         type="text"
         id="search"
         placeholder="Type a name to search..."
-        onChange={(e) => console.log("Searching...")}
+        // to call the function every time i type
+        onChange={(e) => onSearch(e.target.value)}
       />
     </div>
   );
 }
 
 export default Search;
+
+
+
