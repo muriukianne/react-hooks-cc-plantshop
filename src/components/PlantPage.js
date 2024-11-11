@@ -22,7 +22,7 @@ function PlantPage() {
 
   // created a function to add a new plant
   const addPlant = (newPlant) => {
-    fetch("http://localhost:6001/plants", {
+    fetch("https://react-hooks-cc-plantshop-nlsl.onrender.com/plants", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

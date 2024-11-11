@@ -18,7 +18,7 @@ function PlantCard({ plant, updatePlant, deletePlant }) {
 
   // created a function to handle the price changes when the updateprice button is clicked
   function handlePriceUpdate() {
-    fetch(`http://localhost:6001/plants/${plant.id}`, {
+    fetch(`https://react-hooks-cc-plantshop-nlsl.onrender.com/plants/${plant.id}`, {
       method: "PATCH",
       headers: {
         "Content-Type": "application/json",
@@ -39,7 +39,7 @@ function PlantCard({ plant, updatePlant, deletePlant }) {
     const updatedStatus = !inStock;
     setInStock(updatedStatus);
 
-    fetch(`http://localhost:6001/plants/${plant.id}`, {
+    fetch(`https://react-hooks-cc-plantshop-nlsl.onrender.com/plants/${plant.id}`, {
       method: "PATCH",
       headers: {
         "Content-Type": "application/json",
@@ -56,7 +56,7 @@ function PlantCard({ plant, updatePlant, deletePlant }) {
   // created a function to enable the deleting of a plant
   function handleDelete() {
     // make a delete request to the db.json
-    fetch(`http://localhost:6001/plants/${plant.id}`, {
+    fetch(`https://react-hooks-cc-plantshop-nlsl.onrender.com/plants/${plant.id}`, {
       method: "DELETE",
     })
       .then((response) => response.json())
