@@ -12,6 +12,9 @@ it also includes a functionality that allows the admin to toggle the stock statu
 Make sure to open [http://localhost:6001/plants](http://localhost:6001/plants)
 in the browser to verify that your backend is working before you proceed!
 
+## Live Server
+* You can view the web live on 
+
 ## Known bugs
 The application is in good condition and works well
 
