@@ -15,7 +15,7 @@ function PlantPage() {
  
   // fetched data from the db.json server
   useEffect(() => {
-    fetch("https://react-hooks-cc-plantshop-nlsl.onrender.com//plants")
+    fetch("https://react-hooks-cc-plantshop-nlsl.onrender.com/plants")
       .then((response) => response.json())
       .then((data) => setPlants(data));
   }, []);
